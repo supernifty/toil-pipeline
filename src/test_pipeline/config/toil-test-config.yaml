@@ -1,0 +1,18 @@
+# TOIL TEST CONFIG
+#
+# Author: Richard Lupat
+# Created: 17 Feb 2017
+# Last Updated: 18 Feb 2017
+
+static:
+        ref_fa: "/data/seqliner/seqliner-resources/Vespa10/fasta_indexes/Vespa10.fasta"
+        bed_file: "/data/seqliner/seqliner-resources/Vespa10/Vespa10.bed"
+        dbsnp_vcf: "/data/databases/Gatk_Reseource_Bundle/dbsnp_137.b37.vcf"
+        
+exec:
+        bwa: "/config/binaries/bwa/0.7.13/bwa"
+        samtools: "/config/binaries/samtools/1.1/bin/samtools"
+        
+jar:
+        picard: "/config/binaries/picard/2.8.1/picard.jar"
+        gatk: "/config/binaries/gatk/3.7/GenomeAnalysisTK.jar"
