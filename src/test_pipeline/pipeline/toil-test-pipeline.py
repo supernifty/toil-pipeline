@@ -72,7 +72,10 @@ def check_input(job, config, fastqdir):
 	# Input & Output
         ### RL (17/02/2017) Note: Need a more thorough fastq directory & fastq checks
         if os.path.exists(fastqdir):
-                fastqs = [ f for f in os.listdir(fastqdir) if os.path.isfile(os.path.join(fastqdir,f)) and f.endswith("fastq.gz")]
+            fastqs = [ f for f in os.listdir(fastqdir) if os.path.isfile(os.path.join(fastqdir,f)) and f.endswith("fastq.gz")]
+        else:
+            print("fastq directory '{}' doesn't exist from current directory '{}'".format(fastqdir, os.getcwd()))
+            sys.exit(1)
 
 	### RL (17/02/2017)  Temporarily only handle a pair of fastqs
 	if len(fastqs) != 2:
