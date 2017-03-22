@@ -33,7 +33,8 @@ cd src/test_pipeline/example
 ./run_toil_test_pipeline.sh
 ```
 
-### Configure the pipeline ran correctly
+### Ensure the pipeline completed
+The test run creates a number of files in Vespa10-2079GL, the final output is Vespa10-2079GL-REDUCED.sorted.markdups.recal.hap.vcf.
 
 
 ## To-do-list
